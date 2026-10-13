@@ -35,16 +35,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         <legend>Personal Details</legend> 
         <div class="mb-3"> 
           <label for="fullname" class="form-label">Full name</label> 
-          <input type="text" class="form-control" id="fullname" name="fullname"> 
+          <input type="text" class="form-control" id="fullname" name="fullname">
+          <span id="fullnameError"></span>
+        <span id="err-fullname" class="error"></span> 
         </div> 
         <div class="mb-3"> 
           <label for="email" class="form-label">Email</label> 
           <input type="text" class="form-control" id="email" name="email"> 
+          <span id="emailError"></span>
+          <span id="err-email" class="error"></span>
         </div> 
         <div class="mb-3"> 
           <label for="phone" class="form-label">Phone</label> 
-
           <input type="text" class="form-control" id="phone" name="phone"> 
+          <span id="phoneError"></span>
+          <span id="err-phone" class="error"></span>
         </div> 
 	      	</fieldset> 
  
@@ -58,6 +63,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 	            	<option value="2">Losar Festival Night</option> 
 	            	<option value="3">Inter-College Football</option> 
           </select> 
+          <p id="seats-hint"></p>
+          <span id="err-event_id" class="error"></span>
         </div> 
         <p>Food preference:</p> 
         <div class="form-check"> 
@@ -79,7 +86,9 @@ name="interests" value="volunteer">
         <div class="form-check mb-3"> 
           <input class="form-check-input" type="checkbox" id="perform" 
 name="interests" value="perform"> 
-          <label class="form-check-label" for="perform">Performing</label> 
+          <label class="form-check-label" for="perform">Performing</label>
+          <span id="err-interests" class="error"></span>
+          <p id="err-interests"></p>
         </div> 
 	      	</fieldset> 
  

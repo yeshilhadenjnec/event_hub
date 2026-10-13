@@ -57,7 +57,17 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.j
   </div> 
 <div class="container py-4">
       <section id="welcome" class="intro"> 
-      	<h2>Welcome</h2> 
+      	<h2>Welcome</h2>
+<input type="text" id="search" placeholder="Search events">
+
+<select id="seat-filter">
+    <option value="all">All events</option>
+    <option value="open">Open seats</option>
+    <option value="full">Sold out</option>
+</select>
+
+<div id="eventList"></div>
+
       	<p>The <strong>Events Hub</strong> lists every upcoming event at 
          <em>Jigme Namgyel Engineering College</em>. 
          <span class="highlight">Register early!</span></p> 
@@ -78,5 +88,9 @@ width="400" height="250" title="Campus map"></iframe>
 </footer>
    <script 
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+<script src="js/main.js"></script>
+<script> 
+console.log("Events Hub loaded (embedded script)"); 
+</script> 
 </body>
 </html>
